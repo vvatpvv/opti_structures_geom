@@ -1,39 +1,3 @@
-&CONTROL
-    calculation = "scf"
-    max_seconds =  8.64000e+04
-    pseudo_dir  = "C:\Users\user\.burai\.pseudopot"
-/
-
-&SYSTEM
-    a           =  1.23153e+01
-    degauss     =  1.00000e-02
-    ecutrho     =  4.23668e+02
-    ecutwfc     =  4.70743e+01
-    ibrav       = 1
-    nat         = 40
-    nbnd        = 256
-    ntyp        = 4
-    occupations = "smearing"
-    smearing    = "gaussian"
-/
-
-&ELECTRONS
-    conv_thr         =  1.00000e-06
-    electron_maxstep = 200
-    mixing_beta      =  7.00000e-01
-    startingpot      = "atomic"
-    startingwfc      = "atomic+random"
-/
-
-K_POINTS {automatic}
- 4  4  4  0 0 0
-
-ATOMIC_SPECIES
-Cs    132.90545  Cs.pbe-mt_bw.UPF
-I     126.90447  I.pbe-mt_bw.UPF
-Sn    118.71000  Sn.pbe-dn-rrkjus_psl.1.0.0.UPF
-Ge     72.61000  Ge.pbe-n-rrkjus_psl.1.0.0.UPF
-
 ATOMIC_POSITIONS {bohr}
 Cs      0.016677  23.255845  23.255845
 Ge      5.818130   5.818130   5.818130
